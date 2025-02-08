@@ -32,18 +32,22 @@ header {
     color: white;
     height: 145px;
     display: flex;
-    flex-flow: column nowrap;
+
+    flex-flow: column wrap;
     align-items: center;
 }
 
 header img {
+    flex: auto;
     margin-top: 5px;
 }
 nav {
     display: flex;
+   
 }
 
 nav a {
+    flex: auto;
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 5px;
@@ -76,6 +80,7 @@ main {
 div.fotoarthur {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     width: 100vw;
     height: 499px;
     background-image: url(../Foto-arthur/arthur-portrait.jpg);
@@ -91,6 +96,8 @@ section.fundoarthur {
 }
 
 section.efeito {
+    display: flex;
+    flex-flow: column;
     background-color: #545441;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.475);
     color: rgb(237, 237, 237);
@@ -133,7 +140,7 @@ section.fundocadeira {
     justify-content: center;
     align-items: center;
     margin-top: 150px;
-    width: 100vw;
+    max-width: 820px;
     height: 300px;
     box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.497);
     background-image: url(../Fundos/fundo3.jpg);

@@ -1,1 +1,50 @@
 @charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+   body, header {
+    max-width: 820px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.123);
+    margin: auto;
+   }
+    div.fotoarthur {
+    background-image: url(../Foto-arthur/arthur-portrait.jpg);
+    background-size: contain;
+    width: 800px
+   }
+
+   section.efeito {
+    height: 350px;
+    margin-right: 100px
+   }
+
+   section.fundoarthur {
+    width: 27vw;
+   }
+
+   div.logo2 {
+    display: flex;
+    justify-content: flex-end;
+   }
+
+
+   section.fundocadeira {
+    margin-top: 50px;
+   }
+}
+
+section.fundocadeira > article {
+    max-width: 400px;
+}
+
+@media screen and (min-width: 992px) {
+    section.efeito {
+        display: block;
+        animation-duration: 0s;
+        margin-right: 50px;
+    }
+
+    div.fotoarthur {
+        background-image: url(../Foto-arthur/arthur-portrait.jpg);
+    }
+    
+}
