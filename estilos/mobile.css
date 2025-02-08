@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* 
+#d2cbc1
+#858666
+#6d6358
+#717b6a
+#14150a */
+
+@font-face {
+    font-family: 'agrandir';
+    src: url('../Fontes/Agrandir-Regular.otf.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'geosans' ;
+    src: url(../Fontes/GeosansLight.ttf.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'pnova' ;
+    src: url(../Fontes/proxima-nova.otf.otf) format('opentype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #14150a;
+    color: white;
+    height: 145px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header img {
+    margin-top: 5px;
+}
+nav {
+    display: flex;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-inline: 5px;
+    align-self: flex-end;
+    font-family: "agrandir" ,Arial, Helvetica, sans-serif
+
+}
+
+a:hover {
+    background-color: #858666;
+    padding: 8px;
+    transition: 0.3s;
+    
+} 
+
+body {
+    background-color: #d2d2d2;
+    background-image: url(../Foto-arthur/arthur-portrait.jpg);
+    height: 100vh;
+    background-size: cover;
+
+}
