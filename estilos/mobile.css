@@ -63,7 +63,7 @@ nav a {
 
 }
 
-a:hover {
+nav a:hover {
     background-color: #858666;
     padding: 8px;
     transition: 0.3s;
