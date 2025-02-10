@@ -114,7 +114,6 @@ div.logo {
     background-image: url(../Logos/nome-logo-nocrp.png);
     width: 200px;
     height: 85px;
-    margin: 10px;
     margin-bottom: 20px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -223,14 +222,18 @@ section.fundocadeira > article.feed3 {
 }
 
 section.encerrar {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     height: 550px;
     width: 100vw;
 }
 
 div.cell {
-    margin-top: 40px;
-    margin-left: 50px;
+    margin-top: 10px;
+    margin-left: 80px;
     width: 550px;
     height: 550px;
     background-image: url(../Logos/smartphone-cutout-file-png.png);
@@ -245,6 +248,75 @@ iframe#mapa {
     left: 284px;
     height: 468px;
     width: 216px;
+}
+
+div.contato {
+    border-radius: 15px;
+    color: black;
+    padding: 10px;
+    height: 260px;
+    width: 450px;
+    margin-right: 200px;
+    
+}
+.contato > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+.contato > h2 {
+    margin-left: 15px;
+}
+
+div.whatsapp {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    padding: 10px ;
+    height: 70px;
+    width: 350px;
+}
+
+
+
+section.textowpp h3 {
+    text-align: center;
+}
+
+section.iconwpp {
+    background-image: url(../Logos/Sem\ título.png);
+    width: 40px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+div.instagram {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    padding: 10px ;
+    height: 54px;
+    width: 350px;
+}
+
+section.iconig {
+    background-image: url(../Logos/instragram2.png);
+    width: 40px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section.textoig {
+    color: white;
+}
+
+section.textoig h3 {
+    text-align: center;
 }
 
 footer {
@@ -281,5 +353,6 @@ div.criador a {
 div.criador a:hover {
     text-decoration: underline;
 }
+
 }
 
