@@ -64,6 +64,7 @@ nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 8px;
+    font-size: 0.8em;
     border-radius: 8px;
     margin-inline: 5px;
     align-self: flex-end;
@@ -145,6 +146,7 @@ section.efeito {
 }
 
 h1.textfeed {
+    margin-top: 120px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -165,7 +167,7 @@ article {
     margin: 20px;
     background-color: rgba(255, 255, 255, 0.749);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.808);
-    height: 150px;
+    height: 180px;
     width: 60vw; 
 }
 
@@ -232,7 +234,7 @@ div.cell {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 500px;
+    width: 100vw;
     height: 400px;
 }
 
@@ -303,7 +305,7 @@ div.instagram {
 section.iconig {
     background-image: url(../Logos/instragram2.png);
     width: 40px;
-    height: 60px;
+    height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -335,6 +337,7 @@ div.logofinal {
 }
 
 div.criador {
-    width: 231px;
+    width: 280px;
+    text-align: center;
 }
 }
