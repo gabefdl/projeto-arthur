@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@media screen and (min-width: 400px) {
 /* 
 #d2cbc1
 #858666
@@ -22,19 +22,381 @@
     src: url(../Fontes/proxima-nova.otf.otf) format('opentype');
 }
 
+
+    
+
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 header {
-    background-color: #14150a00;
-    color: white;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-between;
-    top: 0%;
+    width: 100vw;
+    height: 130px;
+    background-image: url(../Logos/Capa-Linkedin-limpa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 200px;
+    height: 80px;
+    margin-bottom: 20px;
+    background-color: black;
+    background-image: url(../Logos/nome-logo-nocrp.png);
+    background-size: contain;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    margin-inline: 5px;
+    align-self: flex-end;
+    font-family: "agrandir" ,Arial, Helvetica, sans-serif;
+}
+
+nav a:hover {
+    background-color: #858666;
+    padding: 10px;
+    transition: 0.3s;
+    
+}
+
+body {
+    background-color: #D9D9D9 ;
+    font-family: "geosans" ,'Times New Roman', Times, serif;
+    height: 2600px;
+}
+
+div.inicio {
+    display: flex;
+    height: 900px;
+}
+
+div.fotoarthur {
+    background-image: url(../Foto-arthur/arthur-portrait.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    width: 2400px;
+    height: 650px;
+}
+
+div.fundoinicio {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.fundoinicio > section {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+section.apresentacao {
+    background-color: #545441;
+    margin-top: 30px;
+    text-align: justify;
+    color: white;
+    padding: 10px;
+    border-radius: 10px ;
+    animation-name: slide-in2;
+    animation-duration: 1.3s;
+}
+
+p {
+    padding: 5px;
+}
+
+section.efeito {
+    background-color: #545441;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    animation-name: slide-in;
+    animation-duration: 1.3s;
+    
+}
+
+@keyframe slide-in {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+      }
+    
+      to {
+        translate: 0 1;
+        scale: 100% 1;
+      } 
+}
+
+h1.textfeed {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.fundocadeira {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../Fundos/fundo1.jpg);
+    background-size: cover;
+    height: 650px;
+    box-shadow: inset 0px 10px 10px black;
+}
+
+article {
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.749);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.808);
+    height: 150px;
+    width: 60vw; 
+}
+
+section.fundocadeira > article.feed1 {
+    animation-name: slide-infeed;
+    animation-duration: 1s
+}
+@keyframes slide-infeed {
+    from {
+      translate: -150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 1;
+      scale: 100% 1;
+    } 
+}
+
+section.fundocadeira > article.feed2 {
+    animation-name: slide-infeed2;
+    animation-duration: 1.2s
+}
+@keyframes slide-infeed2 {
+    from {
+      translate: -150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 1;
+      scale: 100% 1;
+    } 
+}
+
+section.fundocadeira > article.feed3 {
+    animation-name: slide-infeed3;
+    animation-duration: 1.4s
+}
+@keyframes slide-infeed3 {
+    from {
+      translate: -150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 1;
+      scale: 100% 1;
+    } 
+}
+
+h1.loc {
+    text-align: center;
+    margin-top: 50px;
+}
+
+section.encerrar {
+    margin-top: 20px;
+    height: 200px;
+}
+
+div.cell {
+    background-image: url(../Logos/telefone-mapa-3.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 400px;
+}
+
+iframe#mapa {
+    border-radius: 25px;
+    position: relative;
+    top: 36px;
+    left: 262px;
+    width: 150px;
+    height: 328px;
+}
+
+div.contato {
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto;
+}
+
+.contato h2 {
+    margin-left: 15px;
+    color: #000000;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+div.whatsapp {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(194, 194, 194);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.416);
+    display: flex;
+    padding: 10px ;
+    height: 70px;
+    width: 350px;
+}
+
+
+
+section.textowpp h3 {
+    text-align: center;
+}
+
+section.iconwpp {
+    background-image: url(../Logos/Sem\ título.png);
+    width: 40px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+div.instagram {
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
+    background-color: rgb(198, 198, 198);
+    display: flex;
+    padding: 10px ;
+    height: 54px;
+    width: 350px;
+}
+
+section.iconig {
+    background-image: url(../Logos/instragram2.png);
+    width: 40px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section.textoig {
+    color: white;
+}
+
+section.textoig h3 {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 500px;
+    background-color: #2b2d15 ;
+    color: white;
+    height: 100px;
+    width: 100vw;
+}
+
+div.logofinal {
+    background-image: url(../Logos/nome-logo-nocrp.png);
+    background-size: cover;
+    height: 50px;
+    width: 130px;
+}
+
+div.criador {
+    width: 231px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+header.header {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+
 }
 
 div.logo {
@@ -45,13 +407,12 @@ div.logo {
     background-repeat: no-repeat;
 }
 nav {
-    display: flex;
+    
     margin-right: 80px;
    
 }
 
 nav a {
-    flex: auto;
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 8px;
@@ -78,17 +439,17 @@ body {
 
 
 main {
-    align-items: center;
+
     font-family: "geosans";
 
 }
 
 div.fotoarthur {
-    display: flex;
+
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 100vw;
-    height: 499px;
+    height: 199px;
     background-image: url(../Foto-arthur/arthur-portrait.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -162,3 +523,5 @@ section.fundocadeira > article {
     height: 150px;
     width: 60vw;
 }
+
+} */
