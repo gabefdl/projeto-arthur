@@ -26,6 +26,10 @@
         margin-right: 50px;
     }
 
+    nav a {
+        font-size: 1em;
+    }
+
    /* header.rolagem {
         background-color: #858666;
         transition: 0.3s;
@@ -369,6 +373,7 @@ footer {
     nav {
         margin-right: 50px;
     }
+
 
     /*header.rolagem {
         background-color: #858666;
