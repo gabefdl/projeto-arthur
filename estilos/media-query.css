@@ -52,6 +52,11 @@
 
 }
 
+section.efeito:hover {
+    padding: 30px;
+    font-size: 17px;
+    transition: 0.5s;
+}
 body, html {
     width: 100vw;
     margin: auto;
@@ -112,6 +117,12 @@ section.apresentacao {
     border-radius: 15px;
     animation-name: slide-in2;
     animation-duration: 1.3s;
+}
+
+section.apresentacao:hover {
+    padding: 30px;
+    font-size: 17px;
+    transition: 0.5s;
 }
 
 @keyframes slide-in2 {
@@ -204,6 +215,12 @@ section.fundocadeira > article.feed3 {
     } 
 }
 
+article:hover {
+    padding: 30px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
 section.encerrar {
     display: flex;
     flex-flow: row;
@@ -259,7 +276,7 @@ div.contato {
 div.whatsapp {
     margin: 10px;
     border-radius: 10px;
-    background-color: rgb(192, 192, 192);
+    background-color: #858666;
     display: flex;
     padding: 10px ;
     height: 70px;
@@ -283,7 +300,7 @@ section.iconwpp {
 div.instagram {
     margin: 10px;
     border-radius: 10px;
-    background-color: rgb(192, 192, 192);
+    background-color: #858666;
     display: flex;
     padding: 10px ;
     height: 54px;
@@ -384,7 +401,10 @@ iframe#mapa {
         width: 206px;
     }
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1400px) {
+    html, body {
+        scroll-behavior: smooth;
+    }
     ::-webkit-scrollbar {
         width: 0px;
         height: 0px;
@@ -409,6 +429,11 @@ iframe#mapa {
     nav {
         margin-right: 50px;
     }
+
+   scroll-container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+   }
 
 
     /*header.rolagem {
@@ -468,8 +493,7 @@ div.logo {
     background-image: url(../Logos/nome-logo-nocrp.png);
     width: 200px;
     height: 85px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin-top: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: flex-end;
@@ -623,6 +647,9 @@ iframe#mapa {
 }
 
 div.contato {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     border-radius: 15px;
     color: black;
     padding: 10px;
@@ -641,10 +668,15 @@ div.contato {
     margin-left: 15px;
 }
 
+div.whatsapp:hover {
+    padding: 15px ;
+    transition: 0.5s;
+}
+
 div.whatsapp {
-    margin: 10px;
+    margin: 15px;
     border-radius: 10px;
-    background-color: rgb(192, 192, 192);
+    background-color: #858666;
     display: flex;
     padding: 10px ;
     height: 70px;
@@ -666,13 +698,18 @@ section.iconwpp {
 }
 
 div.instagram {
-    margin: 10px;
+    margin: 15px;
     border-radius: 10px;
-    background-color: rgb(192, 192, 192);
+    background-color: #858666;
     display: flex;
     padding: 10px ;
     height: 54px;
     width: 350px;
+}
+
+div.instagram:hover {
+    padding: 15px ;
+    transition: 0.5s;
 }
 
 section.iconig {
@@ -688,6 +725,25 @@ section.textoig {
 }
 
 section.textoig h3 {
+    text-align: center;
+}
+
+div.email {
+    margin: 15px;
+    border-radius: 10px;
+    background-color: #858666;
+    display: flex;
+    padding: 10px ;
+    height: 70px;
+    width: 350px;
+}
+div.email:hover {
+    padding: 15px ;
+    transition: 0.5s;
+}
+
+section.textoemail {
+    color: white;
     text-align: center;
 }
 
