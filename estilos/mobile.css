@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 350px) {
 /* 
 #d2cbc1
 #858666
@@ -106,6 +106,7 @@ div.fundoinicio {
 div.fundoinicio > section {
     margin-left: 10px;
     margin-bottom: 30px;
+    margin-right: 10px;
 }
 
 section.apresentacao {
@@ -241,8 +242,8 @@ div.cell {
 iframe#mapa {
     border-radius: 25px;
     position: relative;
-    top: 36px;
-    left: 262px;
+    top: 35px;
+    left: 218px;
     width: 150px;
     height: 328px;
 }
