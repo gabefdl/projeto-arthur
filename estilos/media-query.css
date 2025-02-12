@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 736px) {
+
+    html, body {
+        scroll-behavior: smooth;
+    }
+    
     ::-webkit-scrollbar {
         width: 0px;
         height: 0px;
@@ -362,6 +367,7 @@ div.criador a:hover {
 }
 
 @media screen and (min-width: 910px) and (max-width: 1200px) {
+
 iframe#mapa {
     top: 9px;
     left: 30px;
@@ -429,11 +435,6 @@ iframe#mapa {
     nav {
         margin-right: 50px;
     }
-
-   scroll-container {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-   }
 
 
     /*header.rolagem {
